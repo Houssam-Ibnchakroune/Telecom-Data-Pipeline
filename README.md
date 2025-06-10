@@ -29,35 +29,21 @@ flowchart LR
 ```
 ## 📂 Project Layout
 
-├─ conf/                                         # JARs
-
-├─ src/
-
-│  ├─ Synthetic_Data_Generation.py               # Faker CDR producer → Kafka
-
-│  ├─ Streaming-Based_Mediation.py               # Spark Structured Streaming
-
-│  ├─ RatingEngine.ipynb                         # Spark Batch (Rating Engine)
-
-│  ├─ BillingEngine.ipynb                        # Spark Batch (Billing Engine)
-
-│  ├─ kafka_streaming.py                         # Kafka Producer
-
-│  ├─ initaisation_pg.py                         # Initialization en postgresql
-
-│  └─ reporting.ipynb                            # Spark job -> CSV for BI
-
-├─ resources/
-
-│  ├─ product_catalog.csv
-
-│  └─ rate_plans.csv
-
-├─ cleaned_cdrs/                                 # output Médiation (Parquet)
-
-├─ rated_cdrs/                                   # output Rating     (Parquet)
-
-├─ billing/
-│  └─ facturation_complete/                      # output Billing   (Parquet)
-
+project-root/
+├─ conf/                                         # JARs  
+├─ src/  
+│  ├─ Synthetic_Data_Generation.py               # Générateur de CDR factices → Kafka  
+│  ├─ Streaming_Mediation.py                     # Médiation Spark Structured Streaming  
+│  ├─ RatingEngine.ipynb                         # Spark Batch (Rating Engine)  
+│  ├─ BillingEngine.ipynb                        # Spark Batch (Billing Engine)  
+│  ├─ kafka_streaming.py                         # Kafka Producer  
+│  ├─ initialisation_pg.py                       # Initialisation PostgreSQL  
+│  └─ reporting.ipynb                            # Job Spark → CSV pour BI  
+├─ resources/  
+│  ├─ product_catalog.csv  
+│  └─ rate_plans.csv  
+├─ cleaned_cdrs/                                 # Sortie Médiation (Parquet)  
+├─ rated_cdrs/                                   # Sortie Rating (Parquet)  
+├─ billing/  
+│  └─ facturation_complete/                      # Sortie Facturation (Parquet)  
 └─ report/                                       # CSV prêts pour Power BI
