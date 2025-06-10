@@ -1,0 +1,7 @@
+product_code,service_type,unit,rate_type,description
+VOICE_NAT,voice,minute,flat,Appel vocal national (tarif unitaire à la minutee)
+VOICE_INT,voice,minute,flat,Appel vocal international (tarif unitaire à la minutee)
+SMS_NAT,sms,event,flat,Envoi SMS standard national (tarif unitaire par SMS)
+SMS_INT,sms,event,flat,Envoi SMS standard international (tarif unitaire par SMS)
+DATA_BASIC,data,MB,flat,Session Data basique (tarif unitaire au Mo)
+DATA_PREMIUM,data,MB,tiered,Session Data premium (premier palier gratuit et congestion)
