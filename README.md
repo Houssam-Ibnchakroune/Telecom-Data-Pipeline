@@ -47,3 +47,11 @@ project-root/
 ├─ billing/  
 │  └─ facturation_complete/                      # Sortie Facturation (Parquet)  
 └─ report/                                       # CSV prêts pour Power BI
+
+## ⚙️ Prerequisites
+| Tool                 | Version tested               |
+| -------------------- | ---------------------------- |
+| **Python**           | 3.12                         |
+| **Spark**            | 3.5.x (⚠ driver JDBC ajouté) |
+| **Kafka**            | 3.x                          |
+| **PostgreSQL**       | ≥ 12                         |
