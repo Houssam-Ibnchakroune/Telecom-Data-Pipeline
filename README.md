@@ -30,6 +30,7 @@ flowchart LR
 ## 📂 Project Layout
 
 project-root/
+
 ├─ conf/                                         # JARs  
 ├─ src/  
 │  ├─ Synthetic_Data_Generation.py               # Générateur de CDR factices → Kafka  
