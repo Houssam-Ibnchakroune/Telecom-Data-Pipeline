@@ -22,7 +22,7 @@ flowchart LR
   D --JDBC--> E
   D --CSV--> F
   D --CSV--> G
-  D -->|Parquet| G[rated_cdrs/]
-  H --> H(Spark Batch<br>Billing Engine)
-  I -->|Parquet| I[invoices_final/]
+  D -->|Parquet| H[rated_cdrs/]
+  H --> I(Spark Batch<br>Billing Engine)
+  I -->|Parquet| J[invoices_final/]
   J --> K[Power BI Dashboard]
