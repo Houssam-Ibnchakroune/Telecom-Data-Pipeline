@@ -10,15 +10,19 @@
 ```mermaid
 flowchart LR
   A[Kafka<br>CDR topic] --> B(Spark Streaming<br>Mediation & Clean)
-  B -->|Parquet /record_type| C[Data Lake<br>cleaned_cdrs/]
+  B -->|Parquet /record_type| C[cleaned_cdrs]
   C --> D(Spark Batch<br>Rating Engine)
   subgraph PostgreSQL
-    E[customers] 
-    F[rate_plans] 
+    E[customers]
+  end
+  subgraph ressources
+    F[rate_plans]
+    G[product_catlog]
   end
   D --JDBC--> E
   D --CSV--> F
+  D --CSV--> G
   D -->|Parquet| G[rated_cdrs/]
-  G --> H(Spark Batch<br>Billing Engine)
-  H -->|Parquet| I[invoices_final/]
-  I --> J[Power BI Dashboard]
+  H --> H(Spark Batch<br>Billing Engine)
+  I -->|Parquet| I[invoices_final/]
+  J --> K[Power BI Dashboard]
