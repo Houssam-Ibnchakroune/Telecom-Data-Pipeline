@@ -76,7 +76,7 @@ def clean_sms_df(df):
                 .when(col("receiver_cc") != "212", "SMS_INT")
                 .otherwise("SMS_NAT")
              ) \
-             .drop("receiver_cc2")
+             .drop("receiver_cc")
 def clean_data_df(df):
     fallback = "inconnu"
     return df.dropna(subset=["user_id"]) \

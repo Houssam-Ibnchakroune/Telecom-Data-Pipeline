@@ -1,0 +1,37 @@
+region,record_type,revenue
+Béni Mellal-Khénifra,voice,0.31000000000000005
+Béni Mellal-Khénifra,data,207.94653
+Béni Mellal-Khénifra,sms,0.07
+Casablanca-Settat,sms,0.0
+Casablanca-Settat,data,144.07504
+Casablanca-Settat,voice,0.312
+Dakhla-Oued Ed Dahab,sms,0.07
+Dakhla-Oued Ed Dahab,voice,0.5940000000000001
+Dakhla-Oued Ed Dahab,data,59.058400000000006
+Drâa-Tafilalet,voice,0.131
+Drâa-Tafilalet,data,212.56675999999996
+Drâa-Tafilalet,sms,0.0
+Fès-Meknès,data,134.81152
+Fès-Meknès,voice,0.5250000000000001
+Fès-Meknès,sms,0.0
+Guelmim-Oued Noun,data,88.68992
+Guelmim-Oued Noun,voice,0.38899999999999996
+Guelmim-Oued Noun,sms,0.065
+L'Oriental,sms,0.07
+L'Oriental,voice,0.144
+L'Oriental,data,170.44563
+Laâyoune-Sakia El Hamra,sms,0.0
+Laâyoune-Sakia El Hamra,voice,0.378
+Laâyoune-Sakia El Hamra,data,130.516
+Marrakech-Safi,data,134.36934
+Marrakech-Safi,sms,0.0
+Marrakech-Safi,voice,0.553
+Rabat-Salé-Kénitra,sms,0.065
+Rabat-Salé-Kénitra,voice,0.10200000000000001
+Rabat-Salé-Kénitra,data,183.21555999999998
+Souss-Massa,sms,0.08
+Souss-Massa,voice,0.24000000000000002
+Souss-Massa,data,153.39305
+Tanger-Tétouan-Al Hoceima,voice,0.37400000000000005
+Tanger-Tétouan-Al Hoceima,data,119.70348
+Tanger-Tétouan-Al Hoceima,sms,0.07

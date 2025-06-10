@@ -1,0 +1,37 @@
+region,rate_plan_id,revenue_TTC
+Béni Mellal-Khénifra,PLAN_B,152.3927262
+Béni Mellal-Khénifra,PLAN_C,53.34481799999999
+Béni Mellal-Khénifra,PLAN_A,31.7547
+Casablanca-Settat,PLAN_B,87.41203079999998
+Casablanca-Settat,PLAN_A,41.753412
+Casablanca-Settat,PLAN_C,35.4357828
+Dakhla-Oued Ed Dahab,PLAN_B,51.35722800000001
+Dakhla-Oued Ed Dahab,PLAN_A,16.726308
+Dakhla-Oued Ed Dahab,PLAN_C,0.0
+Drâa-Tafilalet,PLAN_B,124.6720644
+Drâa-Tafilalet,PLAN_A,78.844794
+Drâa-Tafilalet,PLAN_C,38.95858799999999
+Fès-Meknès,PLAN_A,71.80654799999999
+Fès-Meknès,PLAN_B,60.4211628
+Fès-Meknès,PLAN_C,22.055921999999995
+Guelmim-Oued Noun,PLAN_C,63.643828799999994
+Guelmim-Oued Noun,PLAN_A,37.76706
+Guelmim-Oued Noun,PLAN_B,0.21318
+L'Oriental,PLAN_C,83.038455
+L'Oriental,PLAN_B,62.84532719999999
+L'Oriental,PLAN_A,48.668196
+Laâyoune-Sakia El Hamra,PLAN_C,79.57656
+Laâyoune-Sakia El Hamra,PLAN_A,58.778628
+Laâyoune-Sakia El Hamra,PLAN_B,10.863971999999997
+Marrakech-Safi,PLAN_A,111.15752399999998
+Marrakech-Safi,PLAN_C,33.48535679999999
+Marrakech-Safi,PLAN_B,9.1685868
+Rabat-Salé-Kénitra,PLAN_C,152.54837039999998
+Rabat-Salé-Kénitra,PLAN_B,34.312403999999994
+Rabat-Salé-Kénitra,PLAN_A,22.195344
+Souss-Massa,PLAN_C,94.18772339999998
+Souss-Massa,PLAN_B,80.7943536
+Souss-Massa,PLAN_A,0.2508
+Tanger-Tétouan-Al Hoceima,PLAN_C,125.9667396
+Tanger-Tétouan-Al Hoceima,PLAN_B,10.887387600000002
+Tanger-Tétouan-Al Hoceima,PLAN_A,0.114
