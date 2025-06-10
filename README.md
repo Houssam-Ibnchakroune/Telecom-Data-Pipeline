@@ -19,9 +19,9 @@ flowchart LR
     F[rate_plans]
     G[product_catlog]
   end
-  D --JDBC--> E
-  D --CSV--> F
-  D --CSV--> G
+  D <--JDBC-- E
+  D <--CSV-- F
+  D <--CSV-- G
   D -->|Parquet| H[rated_cdrs/]
   H --> I(Spark Batch<br>Billing Engine)
   I -->|Parquet| J[invoices_final/]
