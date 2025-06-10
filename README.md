@@ -24,5 +24,5 @@ flowchart LR
   D --CSV--> G
   D -->|Parquet| H[rated_cdrs/]
   H --> I(Spark Batch<br>Billing Engine)
-  I -->|Parquet| J[invoices_final/]
+  I -->|Parquet| J[facturation_complete/]
   J --> K[Power BI Dashboard]
