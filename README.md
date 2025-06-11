@@ -45,8 +45,7 @@ project-root/
 │  └─ rate_plans.csv  
 ├─ cleaned_cdrs/                                 # Sortie Médiation (Parquet)  
 ├─ rated_cdrs/                                   # Sortie Rating (Parquet)  
-├─ billing/  
-│  └─ facturation_complete/                      # Sortie Facturation (Parquet)  
+├─ billing/                                      # Sortie Facturation (Parquet)                   
 └─ report/                                       # CSV prêts pour Power BI
 
 ## ⚙️ Prerequisites
