@@ -6,11 +6,13 @@ import string
 import uuid
 # Liste des types d'enregistrement
 import psycopg2
+from dateutil.relativedelta import relativedelta
 
 # --- Variables globales pour le timestamp et le compteur ---
-# On démarre au 1er jour du mois en cours à 00:00:00
+# MODIFICATION: On démarre au 1er jour du MOIS PRÉCÉDENT à 00:00:00
 now = datetime.now()
-current_ts = datetime(now.year, now.month, 1, 0, 0, 0)
+current_month_start = datetime(now.year, now.month, 1, 0, 0, 0)
+current_ts = current_month_start - relativedelta(months=1)  # Mois précédent
 
 # Compteur d'enregistrements générés
 cdr_counter = 0

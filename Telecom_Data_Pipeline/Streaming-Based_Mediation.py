@@ -1,6 +1,6 @@
 # TRAITEMENT SPARK ROBUSTE AVEC GESTION DES NULLS
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import from_json, col, count, when, isnull, isnan, desc, to_date,current_date,mean ,lit,substring,current_date, trunc
+from pyspark.sql.functions import from_json, col, count, when, isnull, isnan, desc, to_date,current_date,mean ,lit,substring,current_date, trunc, add_months, last_day
 from pyspark.sql.types import StructType, StringType, IntegerType, DoubleType, TimestampType
 import time
 import os
@@ -152,13 +152,15 @@ df_parsed = df_kafka.selectExpr("CAST(value AS STRING) as json_string") \
 # 5. Traitement robuste avec gestion des nulls
 # On s'assure que record_type est présent car c'est notre clé de catégorisation
 df_valid = df_parsed.filter(col("record_type").isNotNull()& col("timestamp").isNotNull())
-# first_of_month vaut par ex. "2025-06-01"
-first_of_month = trunc(current_date(), "month")
+# first_of_month vaut par ex. "2025-05-01"
+first_of_previous_month = trunc(add_months(current_date(), -1), "month")
+last_of_previous_month = last_day(add_months(current_date(), -1))
+
+# Filtrer pour le mois précédent uniquement
 df_valid = df_valid.filter(
-    to_date(col("timestamp"), "yyyy-MM-dd") >= first_of_month
-)
-# df_valid = df_valid.filter(
-#     to_date(col("timestamp"), "yyyy-MM-dd") >= current_date())
+    (to_date(col("timestamp"), "yyyy-MM-dd") >= first_of_previous_month) &
+    (to_date(col("timestamp"), "yyyy-MM-dd") <= last_of_previous_month))
+
 # 6. Afficher sur la console avec statistiques sur les nulls
 def process_batch(df, epoch_id):
     # Compter les enregistrements
