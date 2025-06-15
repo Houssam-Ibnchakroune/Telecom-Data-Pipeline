@@ -28,7 +28,7 @@ flowchart LR
   J --> K[Power BI Dashboard]
 ```
 ## 📂 Project Layout
-
+```
 project-root/
 ├── conf/                                         # External dependencies (JARs, configs)
 ├── src/
@@ -46,7 +46,7 @@ project-root/
 ├── rated_cdrs/                                   # Parquet output from rating stage
 ├── billing/                                      # Parquet output from billing stage
 └── report/                                       # Final CSVs ready for Power BI
-
+```
 ## ⚙️ Prerequisites
 | Tool                 | Version tested               |
 | -------------------- | ---------------------------- |
