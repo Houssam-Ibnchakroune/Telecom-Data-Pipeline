@@ -30,23 +30,22 @@ flowchart LR
 ## 📂 Project Layout
 
 project-root/
-
-├─ conf/                                         # JARs  
-├─ src/  
-│  ├─ Synthetic_Data_Generation.py               # Genrator of CDRs 
-│  ├─ Streaming_Mediation.py                     # Médiation Spark Structured Streaming  
-│  ├─ RatingEngine.ipynb                         # Spark Batch (Rating Engine)  
-│  ├─ BillingEngine.ipynb                        # Spark Batch (Billing Engine)  
-│  ├─ kafka_streaming.py                         # Kafka Producer  
-│  ├─ initialisation_pg.py                       # Initialisation PostgreSQL  
-│  └─ reporting.ipynb                            # Job Spark → CSV for BI  
-├─ resources/  
-│  ├─ product_catalog.csv  
-│  └─ rate_plans.csv  
-├─ cleaned_cdrs/                                 # Output Médiation (Parquet)  
-├─ rated_cdrs/                                   # Output Rating (Parquet)  
-├─ billing/                                      # Output Facturation (Parquet)                   
-└─ report/                                       # CSV ready for Power BI
+├── conf/                                         # External dependencies (JARs, configs)
+├── src/
+│   ├── synthetic_data_generation.py              # Generates synthetic CDRs
+│   ├── streaming_mediation.py                    # Spark Structured Streaming mediation
+│   ├── rating_engine.ipynb                       # Spark batch job – Rating Engine
+│   ├── billing_engine.ipynb                      # Spark batch job – Billing Engine
+│   ├── kafka_streaming.py                        # Kafka producer
+│   ├── initialise_pg.py                          # PostgreSQL schema & seed initialisation
+│   └── reporting.ipynb                           # Spark job → CSV export for BI
+├── resources/
+│   ├── product_catalog.csv
+│   └── rate_plans.csv
+├── cleaned_cdrs/                                 # Parquet output from mediation stage
+├── rated_cdrs/                                   # Parquet output from rating stage
+├── billing/                                      # Parquet output from billing stage
+└── report/                                       # Final CSVs ready for Power BI
 
 ## ⚙️ Prerequisites
 | Tool                 | Version tested               |
