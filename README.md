@@ -34,7 +34,6 @@ project-root/
 ├─ conf/                                         # JARs  
 ├─ src/  
 │  ├─ Synthetic_Data_Generation.py               # Genrator of CDRs 
-
 │  ├─ Streaming_Mediation.py                     # Médiation Spark Structured Streaming  
 │  ├─ RatingEngine.ipynb                         # Spark Batch (Rating Engine)  
 │  ├─ BillingEngine.ipynb                        # Spark Batch (Billing Engine)  
