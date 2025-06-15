@@ -87,7 +87,7 @@ project-root/
    
 3. **run the CDR producer**:
    ```bash
-    # In one terminal (Python 3.9+ activé)
+    # In one terminal (Python 3.9+ active)
     python kafka_streaming.py
    
 4. **run the job Spark Streaming (médiation)**:
